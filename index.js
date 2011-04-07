@@ -13,11 +13,15 @@
     $('#debug-data').html(text);
   }
 
+  function adjustPosition(position){
+    return Number(position.match(/^(\d+)%$/)[1]) * 10 * -1 +'%';
+  }
+
   DOCUMENT.delegate('#menu a', 'click', function(){
     var link = $(this);
     CANVAS.animate({
-      top: link.data('top'),
-      left: link.data('left')
+      top:  adjustPosition(link.data('top' )),
+      left: adjustPosition(link.data('left'))
     },{
       duration: 3000
     });
@@ -43,7 +47,7 @@
     var resize_pages_timeout;
     WINDOW.resize(function(){
       clearTimeout(resize_pages_timeout);
-      resize_pages_timeout = setTimeout(resizePages, 200);
+      resize_pages_timeout = setTimeout(function(){ resizePages(true); }, 200);
     });
 
     ;(function() {
