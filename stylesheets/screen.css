@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../../Users/deadlyicon/.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../Users/deadlyicon/.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../Users/deadlyicon/.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../Users/deadlyicon/.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../Users/deadlyicon/.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../Users/deadlyicon/.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../Users/deadlyicon/.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../Users/deadlyicon/.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 9, ../src/screen.sass */
+body {
+  background-color: purple;
+}
+
+/* line 12, ../src/screen.sass */
+#canvas {
+  position: absolute;
+  top: -440px;
+  left: -1200px;
+  height: 5500px;
+  width: 4500px;
+  background: red;
+  background-image: -webkit-gradient(radial, 200 200, 0, 200 200, 100, color-stop(0%, #ff0000), color-stop(20%, #ffff00), color-stop(90%, #0000ff), color-stop(100%, #008000));
+  background-image: -moz-radial-gradient(200 200, circle, #ff0000 0%, #ffff00 20%, #0000ff 90%, #008000 100%);
+  background-image: radial-gradient(200 200, circle, #ff0000 0%, #ffff00 20%, #0000ff 90%, #008000 100%);
+}

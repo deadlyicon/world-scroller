@@ -1,0 +1,26 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import compass/reset
+@import compass/css3
+
+body
+  background-color: purple
+
+#canvas
+  position: absolute
+  top: -440px
+  left: -1200px
+  height: 5500px
+  width: 4500px
+
+  background: red
+  
+  
+  //-webkit-gradient(radial, 200 200, 0, 200 200, 100, color-stop(0%, red), color-stop(20%, yellow), color-stop(90%, blue), color-stop(100%, green))
+  +radial-gradient(color-stops(red, yellow 20%, blue 90%, green 100%), 200 200)
+  //-webkit-gradient(radial, 200 200, 0, 200 200, 100, color-stop(0%, red), color-stop(20%, yellow), color-stop(90%, blue), color-stop(100%, green))
+
+  //-webkit-gradient(radial, 200 200, 0, 200 200, 100, color-stop(0%, red), color-stop(20%, yellow), color-stop(90%, blue), color-stop(100%, green))
