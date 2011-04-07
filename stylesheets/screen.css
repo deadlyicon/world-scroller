@@ -64,19 +64,83 @@ a img {
 }
 
 /* line 9, ../src/screen.sass */
+html, body {
+  background-color: red;
+  font-family: helvetica;
+}
+
+/* line 13, ../src/screen.sass */
 body {
+  background-color: orange;
+}
+
+/* line 16, ../src/screen.sass */
+#viewport {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
   background-color: purple;
 }
 
-/* line 12, ../src/screen.sass */
+/* line 28, ../src/screen.sass */
+#debug-data, #menu {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  padding: 1em;
+  color: white;
+}
+
+/* line 35, ../src/screen.sass */
+#debug-data {
+  right: 0;
+  white-space: pre;
+  font-size: 11px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 41, ../src/screen.sass */
+#menu {
+  left: 20%;
+  background-color: black;
+}
+/* line 44, ../src/screen.sass */
+#menu a {
+  color: white;
+}
+
+/* line 48, ../src/screen.sass */
 #canvas {
   position: absolute;
-  top: -440px;
-  left: -1200px;
-  height: 5500px;
-  width: 4500px;
+  height: 1000%;
+  width: 1000%;
+  top: -10%;
+  left: -10%;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #ffff00), color-stop(100%, #000000));
+  background-image: -moz-linear-gradient(left top, #ffff00 0%, #000000 100%);
+  background-image: linear-gradient(left top, #ffff00 0%, #000000 100%);
+}
+/* line 62, ../src/screen.sass */
+#canvas .grid-block {
+  position: absolute;
+  border-top: 1px dotted grey;
+  border-left: 1px dotted grey;
+  color: grey;
+  font-size: 10px;
+}
+/* line 69, ../src/screen.sass */
+#canvas .page {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 5px dotted black;
   background: red;
-  background-image: -webkit-gradient(radial, 200 200, 0, 200 200, 100, color-stop(0%, #ff0000), color-stop(20%, #ffff00), color-stop(90%, #0000ff), color-stop(100%, #008000));
-  background-image: -moz-radial-gradient(200 200, circle, #ff0000 0%, #ffff00 20%, #0000ff 90%, #008000 100%);
-  background-image: radial-gradient(200 200, circle, #ff0000 0%, #ffff00 20%, #0000ff 90%, #008000 100%);
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 }
