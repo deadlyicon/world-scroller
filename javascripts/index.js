@@ -30,8 +30,6 @@
     MULTIPLIER = CANVAS.height() / VIEWPORT.height();
 
     setInterval(debug, 1000);
-
-
   });
 
 
