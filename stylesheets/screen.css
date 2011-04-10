@@ -142,15 +142,11 @@ body {
   -webkit-transition-duration: 2s;
   -o-transition-duration: 2s;
   transition-duration: 2s;
-}
-
-/* line 71, ../src/screen.sass */
-git {
   background-image: -moz-radial-gradient(15% 5% 0deg, circle farthest-corner, white, white, #9bdef7 1%, #012c54 78%);
   background-image: -webkit-gradient(radial, 15% 5%, 10, 15% 5%, 265, from(#fcfcfc), to(#9bdef7));
 }
 /* line 76, ../src/screen.sass */
-git .grid-block {
+#canvas .grid-block {
   position: absolute;
   border-top: 1px dotted grey;
   border-left: 1px dotted grey;
@@ -158,52 +154,52 @@ git .grid-block {
   font-size: 10px;
 }
 /* line 83, ../src/screen.sass */
-git #background {
+#canvas #background {
   height: 100%;
   width: 100%;
 }
 /* line 87, ../src/screen.sass */
-git .page {
+#canvas .page {
   position: absolute;
   height: 20%;
   width: 20%;
 }
 /* line 92, ../src/screen.sass */
-git .page > * {
+#canvas .page > * {
   position: absolute;
 }
 /* line 95, ../src/screen.sass */
-git .page.home {
+#canvas .page.home {
   top: 5%;
   left: 15%;
 }
 /* line 98, ../src/screen.sass */
-git .page.about {
+#canvas .page.about {
   top: 32%;
   left: 2%;
 }
 /* line 101, ../src/screen.sass */
-git .page.art-3d {
+#canvas .page.art-3d {
   top: 45%;
   left: 39%;
 }
 /* line 104, ../src/screen.sass */
-git .page.art-2d {
+#canvas .page.art-2d {
   top: 20%;
   left: 75%;
 }
 /* line 107, ../src/screen.sass */
-git .page.reel {
+#canvas .page.reel {
   top: 70%;
   left: 15%;
 }
 /* line 110, ../src/screen.sass */
-git .page.resume {
+#canvas .page.resume {
   top: 65%;
   left: 68%;
 }
 /* line 115, ../src/screen.sass */
-git #sun {
+#canvas #sun {
   position: absolute;
   top: 5%;
   left: 15%;
@@ -212,7 +208,7 @@ git #sun {
   background: green;
 }
 /* line 122, ../src/screen.sass */
-git #sun img {
+#canvas #sun img {
   position: absolute;
   top: -50%;
   left: -50%;
@@ -237,4 +233,8 @@ git #sun img {
   right: 5%;
   width: 10%;
   max-width: 200px;
+}
+/* line 148, ../src/screen.sass */
+.home.page .baloon img {
+  width: 100%;
 }
