@@ -6,24 +6,46 @@
   <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="index.js" type="text/javascript" charset="utf-8"></script>
+
 </head>
 <body>
   <div id="viewport">
     <div id="debug-data">DEBUG DATA</div>
     <div id="menu">
-      <a href="#page1" data-top="0%"  data-left="0%" >top left</a>
-      <a href="#page2" data-top="0%"  data-left="90%">top right</a>
-      <a href="#page2" data-top="50%" data-left="50%">center</a>
-      <a href="#page2" data-top="90%" data-left="0%" >bottom left</a>
-      <a href="#page2" data-top="90%" data-left="90%">bottom right</a>
+      <a href="#home"  >home</a>
+      <a href="#about" >about</a>
+      <a href="#art-3d">3d art</a>
+      <a href="#art-2d">2d art</a>
+      <a href="#reel"  >reel</a>
+      <a href="#resume">resume</a>
     </div>
     <div id="canvas">
       <div id="grid"></div>
-      <div class="page" style="top:  0%; left: 0%"></div>
-      <div class="page" style="top:  0%; left: 90%"></div>
-      <div class="page" style="top: 50%; left: 50%"></div>
-      <div class="page" style="top: 90%; left:  0%"></div>
-      <div class="page" style="top: 90%; left: 90%"></div>
+
+      <img id="background" src="/images/background.png"></img>
+
+      <div class="page home">
+        <img class="sun" src="/images/home/sun.png"></img>
+        <img class="cloud" src="/images/home/cloud.png"></img>
+        <img class="baloon" src="/images/home/baloon.png"></img>
+      </div>
+
+      <div class="page about">
+      </div>
+
+      <div class="page art-3d">
+      </div>
+
+      <div class="page art-2d">
+      </div>
+
+      <div class="page reel">
+      </div>
+
+      <div class="page resume">
+      </div>
+
+
     </div>
   </div>
 </body>
